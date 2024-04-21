@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="assets/tick.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/todoBox.css">
+    <link rel="stylesheet" href="css/signUp.css">
+    <title>Shadow | Web</title>
+</head>
+<body>
+    <!-- <div id="logindiv"></div> -->
+    <!-- <div class="loginDiv">
+        <form id="formLogin" action="/shadow/web/user/doLogin" method="post">  
+            <h1>LOGIN</h1>  <br><br>
+            <label for="username">username/email/mobile no. :</label>  
+            <input type="text" id="username" name="username" placeholder="username..."><br><br>
+            <label for="password">password :</label> 
+            <input type="password" id="password" name="password" placeholder="password..."><br><br>
+            <input type="checkbox">
+            <label for="rememberMe">Remember me</label><br><br>
+            <button type="submit">Login</button> 
+        </form>
+    </div> -->
+
+    <div id="mainDiv">
+        <!-- Main navbar -->
+        <div class="mainNavBar">
+            <div class="mainLogo"></div>
+            <div class="mainItem">
+                <a href="#" id="mainMenu"><i class="bi bi-house-door"></i></a>
+                <a href="#">Home</a>
+                <a href="#">Article</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact Us</a>
+                <a href=""> Email </a>
+                <a href="#">About</a>
+                <a href="#" onclick="accountLogin()" id="loginBtn">Login <i class="bi bi-person-circle"></i></a>
+            </div>
+        </div> 
+        
+        <!-- main viewport -->
+        <div class="mainViewport">
+            <div class="sidebar">
+                <a href="#">Welcome</a>
+                <a href="#" onclick="signupVisible()">SignUp</a>
+                <a href="#">Login</a>
+                <a href="#">Details Search</a>
+                <a href="src\todo\main.html">To-Do</a>
+                <a href="#" id="newtodo" onclick="visibleTodo()">new To-Do</a>
+            </div>
+            <div class="mainContent">
+            
+                <!-- sign Up form -->
+                <div id="signUp">
+                    <form id="signForm" action="/action.php" onsubmit="">
+                        <h1 id="h">SIGN UP</h1>
+                        <label for="Fname">First Name:</label>
+                        <input type="text" name="Fname" id="fname" placeholder="Your first name.." required>
+                        <label for="Lname">Last Name:</label>
+                        <input type="text" name="Lname" id="lname" placeholder="Your  last name..">
+                        <label for="Dob">DOB :</label>
+                        <input type="date" name="Dob" id="dob">
+                        <label for="Phone">Phone No. :</label>
+                        <input type="number" name="Phone" id="phone" placeholder="Mobile no..." required>
+                        <label for="Email">Email :</label>
+                        <input type="email" name="Email" id="email" placeholder="Email..." required>
+                        <label for="Password">Password :</label>
+                        <input type="password" name="Password" id="password" placeholder="Password..." required>
+                        <label for="Cpassword">New Password:</label>
+                        <input type="password" name="Cpassword" id="cpassword" placeholder="Confirm Password..." required>
+                        <input type="checkbox" name="T&C" id="t&c" required>
+                        <label for"T&C">I Accept the Terms & Conditions.</label>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                
+                
+                <!-- To-do box -->
+                <div id="todoBox">
+                    <h2 id="todo">ToDo app</h2>
+                    <div class="todosearch">
+                        <input type="text" placeholder="type your task...">
+                        <button type="submit">🔍</button>
+                    </div>
+                    <ul id="listContainer">
+                        <li >List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                        <li>List 4</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            
+            <h2>Shadow | WEB</h2><br>
+            <p>All rights reserved © 2004 - 2024  .<br />
+                Designed by Shadow Team
+            </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
